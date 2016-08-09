@@ -1,0 +1,1 @@
+jQuery(".sponsors-admin .acf-field-repeater .acf-button").html("Add New Sponsor"),jQuery(".activeinactive input[value=hide]:checked").closest(".layout").addClass("acfInactive"),jQuery(".activeinactive input[value=Inactive]:checked").closest(".layout").addClass("acfInactive");
