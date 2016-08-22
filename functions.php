@@ -4,8 +4,7 @@
 // Theme Information
 ////////////////////////////////////////////////////////////////////
 
-  $themename = "MakerFaire";
-  $developer_uri = "http://makermedia.com";
+  $themename = "OnTap";
   $shortname = "mf";
   $version = '1.0';
 
@@ -32,11 +31,10 @@
 ////////////////////////////////////////////////////////////////////
 
   function devdmbootstrap3_theme_stylesheets() {
-    wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/css/bootstrap.min.css', array(), null, 'all' );
+    wp_enqueue_style( 'bootstrap-css', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', array(), null, 'all' );
     wp_enqueue_style( 'theme-css', get_stylesheet_directory_uri() . '/css/style.css' );
     wp_enqueue_style( 'font-awesome-css', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css', array(), null, 'all' );
     wp_enqueue_style( 'google-font-body', 'https://fonts.googleapis.com/css?family=Roboto:400,300,700,500', array(), null, 'all' );
-    wp_enqueue_style( 'google-font-heading', 'https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700', array(), null, 'all' );
     wp_enqueue_style( 'owl-carousel', get_template_directory_uri() . '/css/owl.carousel.css', array(), null, 'all' );
   }
   add_action('wp_enqueue_scripts', 'devdmbootstrap3_theme_stylesheets');
@@ -47,46 +45,12 @@
 ////////////////////////////////////////////////////////////////////
 
   function devdmbootstrap3_theme_js() {
-    wp_enqueue_script('theme-js', get_template_directory_uri() . '/js/bootstrap.min.js',array( 'jquery' ),false,true );
+    wp_enqueue_script('bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js',array( 'jquery' ),false,true );
     wp_enqueue_script('misc-scripts', get_stylesheet_directory_uri() . '/js/scripts.js', array( 'jquery' ),false,true );
     wp_enqueue_script('owl-carousel', get_stylesheet_directory_uri() . '/js/owl.carousel.min.js', array( 'jquery' ),false,true );
   }
   add_action('wp_enqueue_scripts', 'devdmbootstrap3_theme_js');
 
-
-////////////////////////////////////////////////////////////////////
-// Enqueue the AngularJS
-////////////////////////////////////////////////////////////////////
-  
-  function angular_scripts() {
-    if (is_page('meet-the-makers') || is_page('schedule')) {
-      wp_enqueue_script(
-        'angularjs',
-        get_stylesheet_directory_uri() . '/bower_components/angular/angular.min.js'
-      );
-
-      wp_enqueue_script(
-        'dirPagination',
-        get_stylesheet_directory_uri() . '/bower_components/angular/dirPagination.js',
-        array( 'angularjs')
-      );
-      wp_enqueue_script(
-        'carousel',
-        get_stylesheet_directory_uri().'/js/owl.carousel.min.js'
-      );
-      wp_enqueue_script(
-        'angular-mtm',
-        get_stylesheet_directory_uri() . '/js/angular/controller.js',
-        array( 'angularjs', 'dirPagination' )
-      );
-      wp_enqueue_script(
-        'schedule',
-        get_stylesheet_directory_uri() . '/js/angular/schedule_cont.js',
-        array( 'angularjs', 'dirPagination' )
-      );
-    }
-  }
-  add_action( 'wp_enqueue_scripts', 'angular_scripts' );
 
 
 ////////////////////////////////////////////////////////////////////
@@ -182,7 +146,7 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
-              <h3 class="sponsor-slide-title">2016 Maker Faire Sponsors: <span class="sponsor-slide-cat"></span></h4>
+              <h3 class="sponsor-slide-title">Sponsors: <span class="sponsor-slide-cat"></span></h4>
               <hr />
               <h5></h5>
             </div>
@@ -198,7 +162,6 @@
                   <div class="item">
                     <div class="row spnosors-row">
                       <div class="col-xs-12">
-                        <h3 class="sponsors-type text-center">GOLDSMITH</h3>
                           <div class="sponsors-box">
                           <?php
                             while( have_rows('goldsmith_sponsors', $id) ): the_row();
@@ -209,7 +172,7 @@
                               if( get_sub_field('url') ):
                                 echo '<a href="' . $sub_field_2 . '" target="_blank">';
                               endif;
-                              echo '<img src="' . $sub_field_1 . '" alt="Maker Faire sponsor logo" class="img-responsive" />';
+                              echo '<img src="' . $sub_field_1 . '" alt="sponsor logo" class="img-responsive" />';
                               if( get_sub_field('url') ):
                                 echo '</a>';
                               endif;

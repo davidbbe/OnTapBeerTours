@@ -16,15 +16,15 @@
 
     register_default_headers( array(
         'wheel' => array(
-            'url' => '%s/img/Maker-Faire-Logo.png',
-            'thumbnail_url' => '%s/img/Maker-Faire-Logo.png',
-            'description' => __( 'Mini Maker Faire Theme', 'devdmbootstrap' )
+            'url' => '%s/img/OnTap-logo.png',
+            'thumbnail_url' => '%s/img/OnTap-logo.png',
+            'description' => __( 'On Tap Theme', 'devdmbootstrap' )
         ))
 
     );
 
     $defaults = array(
-        'default-image'          => get_template_directory_uri() . '/img/mMaker-Faire-Logo.png',
+        'default-image'          => get_template_directory_uri() . '/img/OnTap-logo.png',
         'header-text'            => false,
         'uploads'                => true,
         'wp-head-callback'       => '',

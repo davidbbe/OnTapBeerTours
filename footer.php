@@ -71,7 +71,7 @@
           <div class="row">
             <div class="col-xs-6">
               <ul class="list-unstyled">
-                <li>
+<!--                 <li>
                   <a href="http://makerfaire.com/makerfairehistory" target="_blank">About Maker Faire</a>
                 </li>
                 <li>
@@ -82,12 +82,12 @@
                 </li>
                 <li>
                   <a href="//help.makermedia.com/hc/en-us/categories/200333245-Maker-Faire" target="_blank">Maker Faire FAQs</a>
-                </li>
+                </li> -->
               </ul>
             </div>
             <div class="col-xs-6">
               <ul class="list-unstyled footer-right-col">
-                <li>
+<!--                 <li>
                   <p>Explore Making</p>
                 </li>
                 <li>
@@ -101,11 +101,11 @@
                 </li>
                 <li>
                   <a href="https://readerservices.makezine.com/mk/default.aspx" target="_blank">Subscribe to Make:</a>
-                </li>
+                </li> -->
               </ul>
               <div class="social-network-container">
                 <ul class="social-network social-circle">
-                  <li>
+<!--                   <li>
                     <a href="//www.facebook.com/makerfaire" class="icoFacebook" title="Facebook" target="_blank">
                       <i class="fa fa-facebook"></i>
                     </a>
@@ -124,7 +124,7 @@
                     <a href="//plus.google.com/104410464300110463062/posts" class="icoGoogle-plus" title="Google+" target="_blank">
                       <i class="fa fa-google-plus" target="_blank"></i>
                     </a>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
             </div>
@@ -133,7 +133,7 @@
       </div>
       <div class="row padtop">
         <div class="col-xs-12">
-          <p class="copyright-footer text-center"><?php bloginfo( 'name' ); ?> is independently organized and operated under license from Maker Media, Inc.</p>
+          <p class="copyright-footer text-center">Copyright 2016 On Tap Beer Tours</p>
         </div>
       </div>
     </div>

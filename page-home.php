@@ -784,41 +784,11 @@ get_header();
   else :
 
     // no layouts found
-    ?> no layout found<?php
+    ?><?php
 
   endif;
 
   ?>
 
-
-
-  <?php // FIND OUT MORE PANEL ?>
-  <aside class="fom-panel">
-    <div class="container">
-      <div class="row text-center">
-        <div class="title-w-border-y">
-          <h2 class="text-center">Find Out More</h2>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-xs-6 col-sm-6 col-md-4 text-center">
-          <a href="//help.makermedia.com/hc/en-us/categories/200341459-Make-Magazine" target="_blank">
-            <img src="<?php echo get_bloginfo('template_directory'); ?>/img/Make-Subscriptions.png" alt="Click here to get subscritions to Make: Magazine" class="img-responsive" />
-            <p>Get Make: Magazine</p>
-          </a>
-        </div>
-        <div class="col-xs-6 col-sm-6 col-md-4 text-center">
-          <a href="//makerfaire.com/map/" target="_blank">
-            <img src="<?php echo get_bloginfo('template_directory'); ?>/img/Maker-Faire-map.png" alt="Click here to see our global Maker Faires" class="img-responsive" />
-            <p>Global Maker Faires</p>
-          </a>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 text-center house-ad">
-          <img src="<?php echo get_bloginfo('template_directory'); ?>/img/house-ad-placeholder.jpg" alt="House advertisement" class="img-responsive" />
-        </div>
-      </div>
-    </div>
-  </aside>
 
 <?php get_footer(); ?>
